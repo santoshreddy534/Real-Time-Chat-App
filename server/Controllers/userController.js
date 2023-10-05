@@ -8,7 +8,7 @@ const createToken = (_id) =>{
     const jwtKey = process.env.JWT_SECRET_KEY;
     return  jwt.sign({_id}, jwtKey, {expiresIn: "3d"})
 }
-
+//create user
 const registerUser = async(req, res)=>{
     try{
  const {name, email, password} = req.body;
@@ -38,7 +38,7 @@ res.status(200).json({_id: user._id, name, email, token})
     }
 
 }
-
+//login user
 const loginUser = async(req, res)=>{
     const{email, password} = req.body;
 
@@ -56,7 +56,7 @@ const loginUser = async(req, res)=>{
     }
 }
 
-
+//find user
 const findUser = async(req, res)=>{
     const userId = req.params.userId;
     try{
@@ -66,7 +66,7 @@ const findUser = async(req, res)=>{
         res.status(500).json(error)
     }
 }
-
+// fetch users
 const getUsers = async(req, res)=>{
     try{
         const user = await userModel.find();
