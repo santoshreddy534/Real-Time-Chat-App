@@ -11,7 +11,6 @@ const {user} = useContext(AuthContext);
 const {currentChat, messages, isMessagesLoading, sendTextMessage} = useContext(ChatContext);
 const {recipientUser}= useFetchRecipientUser(currentChat, user);
 const [textMessage, setTextMessage] = useState("")
-console.log("tm", textMessage);
 if(!recipientUser) return(
     <p style={{textAlign: "center", width: "100%"}}>
         Select a user to start messaging
