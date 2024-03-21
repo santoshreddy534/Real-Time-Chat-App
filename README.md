@@ -1,8 +1,8 @@
-MERN Stack Real-Time Chat App
+<h1>MERN Stack Real-Time Chat App</h1>
 
-Created a fully functional real-time chat application built using the MERN stack (MongoDB, Express.js, React.js, and Node.js with Socket.IO). Users can create accounts, chat with others in real-time, and enjoy a seamless communication experience.
+<p>Created a fully functional real-time chat application built using the MERN stack (MongoDB, Express.js, React.js, and Node.js with Socket.IO). Users can create accounts, chat with others in real-time, and enjoy a seamless communication experience.</p>
 
-Features:
+<h3>Features:</h3>
 
 1. User Authentication: Secure user registration and login with username and password (considering to add options for social login in the future).
 
@@ -14,7 +14,7 @@ Features:
 
 5. Scalability: Designed with the MERN stack for potential scalability to accommodate a growing user base.
 
-Technologies:
+<h3>Technologies:</h3>
 
 Backend: Node.js, Express.js, MongoDB 
 
